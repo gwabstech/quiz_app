@@ -5,10 +5,8 @@ class StartScreen extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.purpleAccent,
-      child: _page(),
-    );
+    return _page();
+
   }
 
   Widget _page() {
@@ -18,14 +16,14 @@ class StartScreen extends StatelessWidget{
         children: [
           Image.asset(
             'assets/images/quiz-logo.png',
-            width: 400,
-            height: 400,
+            width: 350,
+            height: 350,
           ),
           const SizedBox(height: 60),
           const Text(
             'Learn Effectively by taking Computer Science Quiz',
             style: TextStyle(
-              fontSize: 22,
+              fontSize: 19,
 
               color: Colors.white,
               fontWeight: FontWeight.normal,
